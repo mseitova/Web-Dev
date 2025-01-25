@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Examples</title>
+    <style>
+        /* Simple border for table, th, and td */
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        /* Collapsed border example */
+        .collapsed-border {
+            border-collapse: collapse;
+        }
+
+        /* Styled table borders */
+        .styled-borders th, .styled-borders td {
+            border: 1px solid white;
+            background-color: #96D4D4;
+        }
+
+        /* Rounded borders example */
+        .rounded-borders th, .rounded-borders td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        /* Dotted border example */
+        .dotted-borders th, .dotted-borders td {
+            border-style: dotted;
+        }
+
+        /* Border color example */
+        .colored-borders th, .colored-borders td {
+            border-color: #96D4D4;
+        }
+
+        /* Full table width example */
+        .full-width {
+            width: 100%;
+        }
+
+        /* Column width example */
+        .column-width th:first-child {
+            width: 70%;
+        }
+
+        /* Row height example */
+        .row-height tr:nth-child(2) {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tables Examples</h1>
+
+    <!-- Example 1: Simple HTML Table -->
+    <h2>Simple HTML Table</h2>
+    <p>This table arranges data into rows and columns:</p>
+    <table>
+        <tr>
+            <th>Company</th> <!-- Table header for Company -->
+            <th>Contact</th> <!-- Table header for Contact -->
+            <th>Country</th> <!-- Table header for Country -->
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td> <!-- Table cell with company name -->
+            <td>Maria Anders</td> <!-- Table cell with contact name -->
+            <td>Germany</td> <!-- Table cell with country name -->
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <!-- Example 2: Collapsed Borders -->
+    <h2>Collapsed Borders</h2>
+    <p>This table uses collapsed borders to avoid double lines:</p>
+    <table class="collapsed-border">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+    </table>
+
+    <!-- Example 3: Styled Table Borders -->
+    <h2>Styled Table Borders</h2>
+    <p>This table uses background colors and white borders for a unique look:</p>
+    <table class="styled-borders">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+    </table>
+
+    <!-- Example 4: Rounded Borders -->
+    <h2>Rounded Borders</h2>
+    <p>This table uses rounded corners on cells:</p>
+    <table class="rounded-borders">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+    </table>
+
+    <!-- Example 5: Dotted Borders -->
+    <h2>Dotted Borders</h2>
+    <p>This table uses dotted borders for cells:</p>
+    <table class="dotted-borders">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+    <!-- Example 6: Colored Borders -->
+    <h2>Colored Borders</h2>
+    <p>This table uses a custom color for the cell borders:</p>
+    <table class="colored-borders">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Bon app'</td>
+            <td>Laurence Lebihan</td>
+            <td>France</td>
+        </tr>
+    </table>
+
+    <!-- Example 7: Full Table Width -->
+    <h2>Full Table Width</h2>
+    <p>This table spans the full width of the page:</p>
+    <table class="full-width">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 8: Column Width -->
+    <h2>Column Width</h2>
+    <p>This table sets the first column width to 70%:</p>
+    <table class="column-width">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 9: Row Height -->
+    <h2>Row Height</h2>
+    <p>This table sets the height of the second row to 200px:</p>
+    <table class="row-height">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+</body>
+</html>

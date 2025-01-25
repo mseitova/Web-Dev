@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Image Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Image Map Examples</h1>
+    <p>Click on different parts of the image below to navigate to different pages.</p>
+
+    <!-- Image Map Example -->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+    <!-- The `usemap` attribute links this image to the map with name "workmap" -->
+
+    <map name="workmap">
+        <!-- Rectangular clickable area -->
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <!-- Circular clickable area -->
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        <!-- Rectangular clickable area -->
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    </map>
+
+    <h2>Shape Examples</h2>
+    <p>Here are examples of shapes you can define in an image map:</p>
+    <ul>
+        <li><strong>Rectangle:</strong> Define a rectangular region using coordinates for two corners (top-left and bottom-right).</li>
+        <li><strong>Circle:</strong> Define a circular region using the center point and radius.</li>
+        <li><strong>Polygon:</strong> Define a polygonal region by specifying multiple points.</li>
+    </ul>
+
+    <!-- Polygon Example -->
+    <h2>Polygon Example</h2>
+    <p>Click on the croissant below to navigate:</p>
+    <img src="french_food.jpg" alt="French Food" usemap="#foodmap">
+
+    <map name="foodmap">
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm">
+    </map>
+
+    <!-- Image Map with JavaScript -->
+    <h2>Image Map with JavaScript</h2>
+    <p>Click on the coffee cup below to see a JavaScript alert:</p>
+    <img src="workplace.jpg" alt="Workplace" usemap="#jsmap">
+
+    <map name="jsmap">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+            alert("You clicked the coffee cup!");
+        }
+    </script>
+
+    <footer>
+        <p>Learn more about <strong>HTML Image Maps</strong> and how to make your images interactive!</p>
+    </footer>
+</body>
+</html>

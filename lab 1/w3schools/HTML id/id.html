@@ -1,0 +1,100 @@
+<!-- Example 1: Using the id Attribute to Style an Element -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue; /* Sets background color to light blue */
+  color: black; /* Sets text color to black */
+  padding: 40px; /* Adds padding inside the element */
+  text-align: center; /* Centers the text */
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1> <!-- Unique id applied to the element -->
+
+</body>
+</html>
+
+<!-- Example 2: Difference Between Class and ID -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Styling an element with a unique id */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Styling all elements with the same class name */
+.city {
+  background-color: tomato; /* Sets background color to tomato */
+  color: white; /* Sets text color to white */
+  padding: 10px; /* Adds padding inside the element */
+}
+</style>
+</head>
+<body>
+
+<!-- Element with unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements sharing the same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+
+<!-- Example 3: HTML Bookmarks with ID and Links -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Bookmark created with id -->
+<h2 id="C4">Chapter 4</h2>
+<p>This is Chapter 4.</p>
+
+<!-- Link to the bookmark from the same page -->
+<a href="#C4">Jump to Chapter 4</a>
+
+<!-- Link to the bookmark from another page -->
+<a href="html_demo.html#C4">Jump to Chapter 4 (from another page)</a>
+
+</body>
+</html>
+
+<!-- Example 4: Using the id Attribute in JavaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  color: blue; /* Initial color set to blue */
+}
+</style>
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!"; /* Updates content */
+}
+</script>
+</head>
+<body>
+
+<h1 id="myHeader">Hello World</h1> <!-- The element to be manipulated -->
+
+<button onclick="displayResult()">Click Me</button> <!-- Button to trigger JavaScript -->
+
+</body>
+</html>

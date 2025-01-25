@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Background Images</title>
+    <style>
+        /* Example: Background image on the entire page */
+        body {
+            background-image: url('img_girl.jpg'); /* Specifies the background image */
+            background-repeat: no-repeat;         /* Ensures the image does not repeat */
+            background-attachment: fixed;         /* Keeps the image fixed while scrolling */
+            background-size: cover;              /* Makes the image cover the entire viewport */
+        }
+
+        /* Example: Background image for a specific element */
+        .element-background {
+            background-image: url('example_img_girl.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%; /* Stretches the image to fit the element */
+            width: 80%;                 /* Sets the width of the element */
+            height: 200px;              /* Sets the height of the element */
+            margin: 20px auto;
+            border: 2px solid #ccc;
+        }
+
+        /* Example: Background image repeating */
+        .repeating-background {
+            background-image: url('pattern.png');
+            background-repeat: repeat; /* Image repeats horizontally and vertically */
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            border: 2px dashed #888;
+        }
+
+        /* Example: Background image with no repeat */
+        .no-repeat-background {
+            background-image: url('icon.png');
+            background-repeat: no-repeat; /* Prevents repeating */
+            background-position: center;  /* Centers the image */
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            border: 2px dotted #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Background Images Examples</h1>
+
+    <p>This page demonstrates various ways to use background images in HTML and CSS.</p>
+
+    <!-- Example 1: Background image for a specific element -->
+    <div class="element-background">
+        <p>This div has a stretched background image covering the entire element.</p>
+    </div>
+
+    <!-- Example 2: Repeating background image -->
+    <div class="repeating-background">
+        <p>The background image here repeats both horizontally and vertically.</p>
+    </div>
+
+    <!-- Example 3: Non-repeating background image -->
+    <div class="no-repeat-background">
+        <p>This background image does not repeat and is centered in the element.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Examples</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Headers Examples</h1>
+
+    <!-- Example 1: Simple Table Headers -->
+    <h2>Simple Table Headers</h2>
+    <table>
+        <tr>
+            <th>Firstname</th> <!-- Header for first name column -->
+            <th>Lastname</th> <!-- Header for last name column -->
+            <th>Age</th> <!-- Header for age column -->
+        </tr>
+        <tr>
+            <td>Jill</td> <!-- Data for first name -->
+            <td>Smith</td> <!-- Data for last name -->
+            <td>50</td> <!-- Data for age -->
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 2: Vertical Table Headers -->
+    <h2>Vertical Table Headers</h2>
+    <table>
+        <tr>
+            <th>Firstname</th> <!-- Vertical header for first names -->
+            <td>Jill</td> <!-- Data under first name header -->
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th> <!-- Vertical header for last names -->
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th> <!-- Vertical header for age -->
+            <td>50</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 3: Align Table Headers -->
+    <h2>Align Table Headers</h2>
+    <table>
+        <tr>
+            <th style="text-align: left;">Firstname</th> <!-- Left-aligned header -->
+            <th style="text-align: left;">Lastname</th>
+            <th style="text-align: left;">Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 4: Header Spanning Multiple Columns -->
+    <h2>Header Spanning Multiple Columns</h2>
+    <table>
+        <tr>
+            <th colspan="2">Name</th> <!-- Header spanning two columns -->
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td> <!-- First name column -->
+            <td>Smith</td> <!-- Last name column -->
+            <td>50</td> <!-- Age column -->
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 5: Table Caption -->
+    <h2>Table Caption</h2>
+    <table style="width:100%">
+        <caption>Monthly Savings</caption> <!-- Table caption serving as a title -->
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td> <!-- Month data -->
+            <td>$100</td> <!-- Savings data -->
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+</body>
+</html>

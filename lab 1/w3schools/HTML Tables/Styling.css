@@ -1,0 +1,29 @@
+/* Highlight every even row with a background color */
+tr:nth-child(even) {
+    background-color: #D6EEEE; /* Light blue color for even rows */
+}
+
+/* Highlight every even column for both headers and cells */
+td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE; /* Same light blue color for even columns */
+}
+
+/* Use RGBA for a transparent light blue effect on even rows */
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4); /* Light blue with transparency */
+}
+
+/* Use RGBA for transparent light blue on even columns for headers and cells */
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4); /* Consistent with rows */
+}
+
+/* Add a bottom border for each table row */
+tr {
+    border-bottom: 1px solid #ddd; /* Subtle gray line below each row */
+}
+
+/* Change the background color when hovering over rows */
+tr:hover {
+    background-color: #D6EEEE; /* Light blue when hovered over */
+}

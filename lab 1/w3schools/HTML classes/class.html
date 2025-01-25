@@ -1,0 +1,126 @@
+<!-- Example 1: Using the class Attribute -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato; /* Sets background color to tomato */
+  color: white; /* Sets text color to white */
+  border: 2px solid black; /* Adds a black border */
+  margin: 20px; /* Adds margin around each element */
+  padding: 20px; /* Adds padding inside the element */
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2> <!-- Title with "city" class -->
+  <p>London is the capital of England.</p> <!-- Paragraph with "city" class -->
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+<!-- Example 2: Using the class Attribute in a <span> Element -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%; /* Makes text slightly larger */
+  color: red; /* Sets text color to red */
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1> <!-- Styling part of the heading -->
+<p>This is some <span class="note">important</span> text.</p> <!-- Styling part of a paragraph -->
+
+</body>
+</html>
+
+<!-- Example 3: Multiple Classes -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: lightblue; /* Sets background color to light blue */
+  color: black; /* Sets text color to black */
+}
+
+.main {
+  font-weight: bold; /* Makes the text bold */
+}
+</style>
+</head>
+<body>
+
+<h2 class="city main">London</h2> <!-- Belongs to both "city" and "main" classes -->
+<h2 class="city">Paris</h2> <!-- Belongs only to "city" class -->
+<h2 class="city">Tokyo</h2>
+
+</body>
+</html>
+
+<!-- Example 4: Different Elements Sharing the Same Class -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: lightgreen; /* Sets background color to light green */
+  padding: 10px; /* Adds padding */
+}
+</style>
+</head>
+<body>
+
+<h2 class="city">Paris</h2> <!-- Heading styled with "city" class -->
+<p class="city">Paris is the capital of France</p> <!-- Paragraph styled with "city" class -->
+
+</body>
+</html>
+
+<!-- Example 5: Using class Attribute in JavaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: yellow; /* Sets background color to yellow */
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+<script>
+function hideCities() {
+  var x = document.getElementsByClassName("city"); /* Get all elements with "city" class */
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; /* Hide each element */
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="city">London</div>
+<div class="city">Paris</div>
+<div class="city">Tokyo</div>
+
+<button onclick="hideCities()">Hide Cities</button> <!-- Button to hide all "city" elements -->
+
+</body>
+</html>

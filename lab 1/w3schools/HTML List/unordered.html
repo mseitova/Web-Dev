@@ -1,0 +1,101 @@
+<!-- Example 1: Unordered HTML List -->
+<h2>Unordered HTML List</h2>
+<p>The items in this list are marked with bullets (default):</p>
+<ul>
+  <li>Coffee</li> <!-- First item -->
+  <li>Tea</li> <!-- Second item -->
+  <li>Milk</li> <!-- Third item -->
+</ul>
+
+<!-- Example 2: Unordered List with Different Markers -->
+<h2>Unordered HTML List - Choose List Item Marker</h2>
+
+<!-- Disc Marker -->
+<h3>Disc Marker (Default)</h3>
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- Circle Marker -->
+<h3>Circle Marker</h3>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- Square Marker -->
+<h3>Square Marker</h3>
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- No Marker -->
+<h3>No List Marker</h3>
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- Example 3: Nested HTML Lists -->
+<h2>Nested HTML Lists</h2>
+<p>Lists can be nested (list inside list):</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul> <!-- Nested list under Tea -->
+      <li>Black tea</li> <!-- First nested item -->
+      <li>Green tea</li> <!-- Second nested item -->
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<!-- Example 4: Horizontal List with CSS -->
+<h2>Horizontal List with CSS</h2>
+<p>This list is styled horizontally to create a navigation menu:</p>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none; /* Removes default bullet markers */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow: hidden; /* Ensures no overflow of floated items */
+  background-color: #333333; /* Background color for the list */
+}
+
+li {
+  float: left; /* Floats list items horizontally */
+}
+
+li a {
+  display: block; /* Makes links block elements for easy styling */
+  color: white; /* White text color */
+  text-align: center; /* Center aligns the text */
+  padding: 16px; /* Adds padding around the text */
+  text-decoration: none; /* Removes underline from links */
+}
+
+li a:hover {
+  background-color: #111111; /* Changes background color on hover */
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li> <!-- First navigation item -->
+  <li><a href="#news">News</a></li> <!-- Second navigation item -->
+  <li><a href="#contact">Contact</a></li> <!-- Third navigation item -->
+  <li><a href="#about">About</a></li> <!-- Fourth navigation item -->
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!-- Example 1: Styling First Two Columns with <colgroup> -->
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE"> <!-- Light blue for first two columns -->
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+</table>
+
+<!-- Example 2: Styling Multiple Columns with Different Styles -->
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE"> <!-- Light blue for first two columns -->
+    <col span="3" style="background-color: pink"> <!-- Pink for next three columns -->
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+  </tr>
+</table>
+
+<!-- Example 3: Empty <col> Elements for Styling Middle Columns -->
+<table>
+  <colgroup>
+    <col span="3"> <!-- First three columns with no styles -->
+    <col span="2" style="background-color: pink"> <!-- Pink for two middle columns -->
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<!-- Example 4: Hiding Columns with Visibility Collapse -->
+<table>
+  <colgroup>
+    <col span="2"> <!-- First two columns visible -->
+    <col span="3" style="visibility: collapse"> <!-- Next three columns hidden -->
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+  </tr>
+</table>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Examples</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Example: Padding inside cells */
+        .with-padding th, .with-padding td {
+            padding: 15px; /* Adds space between cell content and edges */
+        }
+
+        /* Example: Custom padding on each side */
+        .custom-padding th, .custom-padding td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+
+        /* Example: Spacing between cells */
+        .with-spacing {
+            border-spacing: 30px; /* Adds space between cells */
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Headers Examples</h1>
+
+    <!-- Example 1: Simple Table Headers -->
+    <h2>Simple Table Headers</h2>
+    <table>
+        <tr>
+            <th>Firstname</th> <!-- Header for first name column -->
+            <th>Lastname</th> <!-- Header for last name column -->
+            <th>Age</th> <!-- Header for age column -->
+        </tr>
+        <tr>
+            <td>Jill</td> <!-- Data for first name -->
+            <td>Smith</td> <!-- Data for last name -->
+            <td>50</td> <!-- Data for age -->
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 2: Table with Padding -->
+    <h2>Table with Cell Padding</h2>
+    <table class="with-padding">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 3: Table with Custom Padding on Each Side -->
+    <h2>Table with Custom Padding</h2>
+    <table class="custom-padding">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 4: Table with Cell Spacing -->
+    <h2>Table with Cell Spacing</h2>
+    <table class="with-spacing">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!-- Example 5: Table Caption -->
+    <h2>Table Caption</h2>
+    <table style="width:100%">
+        <caption>Monthly Savings</caption> <!-- Table caption serving as a title -->
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td> <!-- Month data -->
+            <td>$100</td> <!-- Savings data -->
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+</body>
+</html>
