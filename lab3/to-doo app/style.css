@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(124, 8, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+#todo-input {
+    width: 80%;
+    border-radius: 60px;
+    padding: 6px;
+    font-size: large;
+    font-family: monospace;
+    border: solid 1px;
+    border-color: rgb(124, 8, 95);
+}
+
+#todo-input:focus {
+    outline: none;
+    border-color: rgb(124, 8, 95);
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 15px;
+    padding: 6px 10px 6px 10px;
+    border: none;
+    background-color: rgb(124, 8, 95);
+    transition: background-color 300ms ease 0s;
+}
+
+
+button:hover {
+    background-color: rgb(255, 233, 247);
+}
+
+button img {
+    height: auto;
+    width: 30px;
+}
+
+.main {
+    background-color: rgb(255, 247, 252);
+    padding: 20px 50px 20px 50px;
+    border-radius: 20px;
+    width: 25%;
+    height: 60%;
+
+}
+
+#no-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+
+}
+
+.checked {
+    text-decoration: line-through;
+    color: rgb(186, 186, 186);
+}
+
+svg {
+    color: black;
+    height: 20px;
+    width: auto;
+}
+
+li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 5px 0;
+    margin-right: 5px;
+}
+
+li label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 70%;
+    overflow: hidden;
+}
+
+li p {
+    width: 60%;
+}
+
+ul {
+    display: block;
+    padding-inline-start: 0;
+}
+
+#content-container {
+    height: 70%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.delete {
+    background-color: transparent;
+}
