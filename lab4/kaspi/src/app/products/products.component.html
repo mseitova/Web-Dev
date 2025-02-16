@@ -1,0 +1,67 @@
+<header class="kaspi-header">
+    <div class="container">
+      <a href="#" class="brand">
+        <img
+          ngSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kaspi.kz_logo.svg/120px-Kaspi.kz_logo.svg.png"
+          alt="Kaspi.kz"
+          width="40"
+          height="40"
+          class="logo"
+          priority>
+        <span class="brand-text">Kaspi Marketplace</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="nav-link active">Главная</a></li>
+          <li><a href="#" class="nav-link">Каталог</a></li>
+          <li><a href="#" class="nav-link">Акции</a></li>
+          <li><a href="#" class="nav-link">Поддержка</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Грид товаров -->
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let product of products">
+      <div class="image-gallery">
+        <img *ngFor="let img of product.images" [src]="img" alt="Product image">
+      </div>
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+  
+      <div class="rating">
+        <span *ngFor="let star of getStars(product.rating)" class="star">
+          <i class="fas" [ngClass]="star ? 'fa-star' : 'fa-star-o'"></i>
+        </span>
+        <span class="rating-value">{{ product.rating }}/5</span>
+      </div>
+  
+      <button class="kaspi-buy" (click)="openKaspiLink(product.kaspiLink)">
+        Купить на Kaspi.kz
+      </button>
+
+    <div class="share-buttons">
+        <button class="whatsapp" (click)="shareViaWhatsApp(product.kaspiLink)">
+          <i class="fab fa-whatsapp"></i> Поделиться в WhatsApp
+        </button>
+        <button class="telegram" (click)="shareViaTelegram(product.kaspiLink)">
+          <i class="fab fa-telegram"></i> Поделиться в Telegram
+        </button>
+    </div>
+  </div>
+  
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kaspi.kz. Все права защищены.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия использования</a></li>
+          <li><a href="#">Поддержка</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  
