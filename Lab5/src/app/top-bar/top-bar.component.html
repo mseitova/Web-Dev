@@ -1,0 +1,31 @@
+<header class="kaspi-header">
+  <div class="container">
+    <!-- Логотип и название слева -->
+    <a [routerLink]="['/']" class="brand">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kaspi.kz_logo.svg/120px-Kaspi.kz_logo.svg.png"
+        alt="Kaspi.kz"
+        class="logo"
+      >
+      <span class="brand-text">Kaspi Marketplace</span>
+    </a>
+
+    <!-- Обертка для меню и корзины -->
+    <div class="nav-cart-wrapper">
+      <!-- Меню -->
+      <nav class="main-nav">
+        <ul>
+          <li><a [routerLink]="['/']" class="nav-link active">Main</a></li>
+          <li><a [routerLink]="['/catalog']" class="nav-link">Catalog</a></li>
+          <li><a [routerLink]="['/sale']" class="nav-link">Sale</a></li>
+          <li><a [routerLink]="['/support']" class="nav-link">Support</a></li>
+        </ul>
+      </nav>
+
+      <!-- Корзина рядом с меню -->
+      <a [routerLink]="['/checkout']" class="button fancy-button" aria-label="Go to Checkout">
+        <em class="material-icons">shopping_cart</em> Checkout
+      </a>
+    </div>
+  </div>
+</header>

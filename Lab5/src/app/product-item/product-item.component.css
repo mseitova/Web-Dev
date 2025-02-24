@@ -1,0 +1,69 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+
+}
+
+.product-holder {
+    border: solid 1px;
+    border-color: gray;
+    border-radius: 20px;
+}
+
+.title-holder {
+    height: 50px;
+}
+
+p {
+    text-align: center;
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.image-holder {
+    height: 200px;
+    width: 200px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px 0 15px;
+}
+
+.not-interested {
+    background-color: gray;
+}
+
+.like-holder {
+    display: flex;
+    flex-direction: row;
+}
+
+.like {
+    background-color: transparent;
+}
+
+.clicked {
+    color: red;
+}

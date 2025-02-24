@@ -1,0 +1,10 @@
+<h1 style="margin: 20px 80px 20px 80px;">{{category}}</h1>
+<div class="products-list" [@fadeInOut]>
+
+    <div class="product" *ngFor="let p of products">
+
+        <app-product-item [product]=p (remove)="onProductRemove($event)"></app-product-item>
+
+
+    </div>
+</div>
