@@ -1,0 +1,11 @@
+<a style="color: gainsboro;" routerLink="../">go back...</a>
+<h1>Welcome to album {{album.id}}</h1>
+<h2>{{album.title}}</h2>
+<fieldset>
+    <input type="text" [(ngModel)]="title">
+    <button (click)="changeTitle()">
+        <p *ngIf="loading">...</p>
+        <p *ngIf="!loading">Save</p>
+    </button>
+</fieldset>
+<h3><a routerLink="photos">see photos...</a></h3>

@@ -1,0 +1,17 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.holder div {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    border: solid 1px;
+    padding: 0 20px 10px 20px;
+}
+
+p {
+    height: 60px;
+}

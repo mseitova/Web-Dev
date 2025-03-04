@@ -1,0 +1,7 @@
+<a style="color: gainsboro;" routerLink="../">go back...</a>
+<div class="holder">
+    <div *ngFor="let photo of photos">
+        <p>{{photo.title}}</p>
+        <img src="{{photo.thumbnailUrl}}">
+    </div>
+</div>

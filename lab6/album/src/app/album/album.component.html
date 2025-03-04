@@ -1,0 +1,15 @@
+<ul *ngIf="loaded; else loading">
+    <h1>Album list</h1>
+    <div class="album-holder">
+        <div *ngFor="let album of albums">
+            <a [routerLink]="['/albums', album.id]">{{album.id}} </a>
+            <button (click)="deletePost(album.id)">x</button>
+
+
+        </div>
+    </div>
+</ul>
+
+<ng-template #loading>
+    <p>Posts are loading...</p>
+</ng-template>

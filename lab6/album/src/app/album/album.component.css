@@ -1,0 +1,25 @@
+.album-holder div {
+    border: solid 1px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    width: 50px;
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.album-holder {
+    display: flex;
+    flex-wrap: wrap;
+}
