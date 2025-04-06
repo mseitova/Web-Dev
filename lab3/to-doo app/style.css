@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(124, 8, 95);
+    background-color: rgb(13, 22, 191);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,12 @@ body {
     font-size: large;
     font-family: monospace;
     border: solid 1px;
-    border-color: rgb(124, 8, 95);
+    border-color: rgb(18, 63, 177);
 }
 
 #todo-input:focus {
     outline: none;
-    border-color: rgb(124, 8, 95);
+    border-color: rgb(8, 150, 211);
 }
 
 #input-container {
@@ -31,7 +31,7 @@ button {
     border-radius: 15px;
     padding: 6px 10px 6px 10px;
     border: none;
-    background-color: rgb(124, 8, 95);
+    background-color: rgb(73, 22, 211);
     transition: background-color 300ms ease 0s;
 }
 

@@ -29,6 +29,7 @@ function showTodos() {
     }
 }
 
+
 input.addEventListener("keyup", e => {
     let todo = input.value.trim();
     if (!todo || e.key != "Enter") {
@@ -38,8 +39,9 @@ input.addEventListener("keyup", e => {
 });
 addButton.addEventListener("click", () => {
     let todo = input.value.trim();
-    if (!todo) {
-        return
+    if (!todo){
+        alert("Please ebter todo");
+        return;
     }
     addTodo(todo);
 });
